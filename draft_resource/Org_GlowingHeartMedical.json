@@ -9,8 +9,15 @@
 			},
 			"identifier": [
 				{
-					"use": "official",
-					"system": "https://npiregistry.cms.hhs.gov/",
+					"type": {
+						"coding": [
+							{
+								"system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType",
+								"code": "npi",
+								"display": "National Provider Identifier"
+							}
+						]
+					},
 					"value": "953170341699"
 				}
 			],

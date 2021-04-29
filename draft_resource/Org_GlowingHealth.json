@@ -9,10 +9,16 @@
 			},
 			"identifier": [
 				{
-					"use": "official",
-					"system": "https://npiregistry.cms.hhs.gov/",
-					"value": "112864302278"
-				}
+					"type": {
+								"coding": [
+									{
+										"system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType",
+										"code": "payerid"
+									}
+								]
+							},
+					"value": "112864302278"					
+				}				
 			],
 			"active": true,
 			"type": [

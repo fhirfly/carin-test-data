@@ -1,0 +1,540 @@
+{
+			"resourceType": "ExplanationOfBenefit",
+			"id": "2ee942ff-dd8a-4146-a113-a06fba0b8b91",
+			"meta": {
+				"profile": [
+					"http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Professional-NonClinician|1.0.0"
+				]
+			},
+			"identifier": [
+				{
+					"type": {
+						"coding": [
+							{
+								"system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType",
+								"code": "uc",
+								"display": "Unique Claim ID"
+							}
+						]
+					},
+					"value": "2ee942ff-dd8a-4146-a113-a06fba0b8b91"
+				}
+			],
+			"status": "active",
+			"type": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/claim-type", 
+						"code": "professional",
+						"display" : "Professional"
+					}
+				]
+			},
+			"use": "claim",
+			"patient": {
+				"reference": "Patient/05c5fb73-44ec-eab9-7c32-b4b61fdbad63"
+			},
+			"billablePeriod": {
+				"start": "2020-03-05",
+				"end": "2020-03-05"
+			},
+			"created": "2021-01-14",
+			"insurer": {
+				"reference": "Organization/112864302278",
+				"display": "Glowing Health Insurance Company"
+			},
+			"provider": {
+				"reference": "Practitioner/457183978250",
+				"identifier": {
+					"system": "http://hl7.org/fhir/sid/us-npi",
+					"value": "457183978250"
+				},
+				"display": "457183978250"
+			},
+			"payee": {
+				"type": {
+					"coding": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/payeetype",
+							"code": "practitioner"
+						}
+					]
+				},
+				"party": {
+					"display": "457183978250"
+				}
+			},
+			"outcome": "complete",
+			"supportingInfo": [
+				{
+					"sequence": 1,
+					"category": {
+						"coding": [
+							{
+								"system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType",
+								"code": "billingnetworkcontractingstatus",
+								"display": "Billing Network Contracting Status"
+							}
+						],
+						"text": "billingnetworkcontractingstatus"
+					},
+					"code": {
+						"coding": [
+							{
+								"code": "out"
+							}
+						]
+					}
+				},
+				{
+					"sequence": 2,
+					"category": {
+						"coding": [
+							{
+								"system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType",
+								"code": "clmrecvddate",
+								"display": "Claim Received Date"
+							}
+						],
+						"text": "clmrecvddate"
+					},
+					"code": {
+						"coding": [
+							{
+								"code": "2020-03-05"
+							}
+						]
+					}
+				},
+				{
+					"sequence": 3,
+					"category": {
+						"coding": [
+							{
+								"system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType",
+								"code": "performingnetworkcontractingstatus",
+								"display": "Performing Network Contracting Status"
+							}
+						]
+					},
+					"code": {
+						"coding": [
+							{
+								"code": "out"
+							}
+						]
+					}
+				}
+			],
+			"diagnosis": [
+				{
+					"sequence": 1,
+					"diagnosisCodeableConcept": {
+						"coding": [
+							{
+								"system": "http://hl7.org/fhir/sid/icd-10-cm",
+								"code": "R69",
+								"display": "Unspecified illness"
+							}
+						]
+					},
+					"type": [
+						{
+							"coding": [
+								{
+									"system": "http://terminology.hl7.org/CodeSystem/ex-diagnosistype",
+									"code": "principal"
+								}
+							]
+						}
+					]
+				},
+				{
+					"sequence": 2,
+					"diagnosisCodeableConcept": {
+						"coding": [
+							{
+								"system": "http://hl7.org/fhir/sid/icd-10-cm",
+								"code": "R69",
+								"display": "Unspecified illness"
+							}
+						]
+					},
+					"type": [
+						{
+							"coding": [
+								{
+									"system": "http://terminology.hl7.org/CodeSystem/ex-diagnosistype",
+									"code": "clinical"
+								}
+							]
+						}
+					]
+				},
+				{
+					"sequence": 3,
+					"diagnosisCodeableConcept": {
+						"coding": [
+							{
+								"system": "http://hl7.org/fhir/sid/icd-10-cm",
+								"code": "R69",
+								"display": "Unspecified illness"
+							}
+						]
+					},
+					"type": [
+						{
+							"coding": [
+								{
+									"system": "http://terminology.hl7.org/CodeSystem/ex-diagnosistype",
+									"code": "clinical"
+								}
+							]
+						}
+					]
+				},
+				{
+					"sequence": 4,
+					"diagnosisCodeableConcept": {
+						"coding": [
+							{
+								"system": "http://hl7.org/fhir/sid/icd-10-cm",
+								"code": "R69",
+								"display": "Unspecified illness"
+							}
+						]
+					},
+					"type": [
+						{
+							"coding": [
+								{
+									"system": "http://terminology.hl7.org/CodeSystem/ex-diagnosistype",
+									"code": "clinical"
+								}
+							]
+						}
+					]
+				},
+				{
+					"sequence": 5,
+					"diagnosisCodeableConcept": {
+						"coding": [
+							{
+								"system": "http://hl7.org/fhir/sid/icd-10-cm",
+								"code": "R69",
+								"display": "Unspecified illness"
+							}
+						]
+					},
+					"type": [
+						{
+							"coding": [
+								{
+									"system": "http://terminology.hl7.org/CodeSystem/ex-diagnosistype"
+								}
+							]
+						}
+					]
+				}
+			],
+			"procedure": [
+				{
+					"sequence": 1,
+					"type": [
+						{
+							"coding": [
+								{
+									"system": "http://terminology.hl7.org/CodeSystem/ex-procedure-type",
+									"code": "primary"
+								}
+							]
+						}
+					],
+					"date": "2020-03-05",
+					"procedureCodeableConcept": {
+						"coding": [
+							{
+								"system": "http://snomed.info/sct",
+								"code": "261352009",
+								"display": "Face mask (physical object)"
+							}
+						]
+					}
+				}
+			],
+			"insurance": [
+				{
+					"focal": false,
+					"coverage": {
+						"reference": "Coverage/1eaa9946-67de-4fd4-8404-5d8d3bfd52a2"
+					}
+				}
+			],
+			"item": [
+				{
+					"sequence": 1,
+					"category": {
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/ex-benefitcategory",
+								"code": "11",
+								"display": "11"
+							}
+						]
+					},
+					"productOrService": {
+						"coding": [
+							{
+								"system": "http://snomed.info/sct",
+								"code": "261352009",
+								"display": "Face mask (physical object)"
+							}
+						]
+					},
+					"modifier": [
+						{
+							"coding": [
+								{
+									"system": "http://terminology.hl7.org/CodeSystem/modifiers"
+								}
+							]
+						}
+					],
+					"servicedPeriod": {
+						"start": "2020-03-05",
+						"end": "2020-03-05"
+					},
+					"locationCodeableConcept": {
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/ex-serviceplace"
+							}
+						]
+					},
+					"adjudication": [
+						{
+							"category": {
+								"coding": [
+									{
+										"system": "http://terminology.hl7.org/CodeSystem/adjudication",
+										"code": "submitted",
+										"display": "Submitted Amount"
+									}
+								]
+							},
+							"amount": {
+								"value": 429.47,
+								"currency": "USD"
+							}
+						},
+						{
+							"category": {
+								"coding": [
+									{
+										"system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus",
+										"code": "innetwork",
+										"display": "In Network"
+									}
+								]
+							}
+						}
+					]
+				}
+			],
+			"total": [
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/adjudication",
+								"code": "submitted"
+							}
+						]
+					},
+					"amount": {
+						"value": 465.95,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/adjudication",
+								"code": "allowed"
+							}
+						]
+					},
+					"amount": {
+						"value": 465.95,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/adjudication",
+								"code": "paidbypatient"
+							}
+						]
+					},
+					"amount": {
+						"value": 429.47,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/adjudication",
+								"code": "paidtoprovider"
+							}
+						]
+					},
+					"amount": {
+						"value": 465.95,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/adjudication",
+								"code": "paidtopatient"
+							}
+						]
+					},
+					"amount": {
+						"value": 0.0,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/adjudication",
+								"code": "payment"
+							}
+						]
+					},
+					"amount": {
+						"value": 465.95,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/adjudication",
+								"code": "disallowed"
+							}
+						]
+					},
+					"amount": {
+						"value": 429.47,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/adjudication",
+								"code": "deductible"
+							}
+						]
+					},
+					"amount": {
+						"value": 1000.0,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/adjudication",
+								"code": "coins"
+							}
+						]
+					},
+					"amount": {
+						"value": 0.0,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/adjudication",
+								"code": "copay"
+							}
+						]
+					},
+					"amount": {
+						"value": 400.0,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/adjudication",
+								"code": "memberliability"
+							}
+						]
+					},
+					"amount": {
+						"value": 0.0,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/adjudication",
+								"code": "priorpayerpaid"
+							}
+						]
+					},
+					"amount": {
+						"value": 36.48,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/adjudication",
+								"code": "discount"
+							}
+						]
+					},
+					"amount": {
+						"value": 0.0,
+						"currency": "USD"
+					}
+				}
+			],
+			"payment": {
+				"type": {
+					"coding": [
+						{
+							"system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus",
+							"code": "paid",
+							"display" : "Paid"
+						}
+					]
+				},
+				"date": "2020-03-05"
+			}
+		}

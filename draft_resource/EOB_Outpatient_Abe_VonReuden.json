@@ -1,0 +1,379 @@
+{
+			"resourceType": "ExplanationOfBenefit",
+			"id": "7a96093b-ddd0-43d8-85f7-8e4892071715",
+			"meta": {
+				"lastUpdated": "2021-01-14T05:16:55.03+00:00",
+				"profile": [
+					"http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Outpatient-Institutional|1.0.0"
+				]
+			},
+			"identifier": [
+				{
+					"type": {
+						"coding": [
+							{
+								"system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType",
+								"code": "uc",
+								"display": "Unique Claim ID"
+							}
+						]
+					},
+					"value": "7a96093b-ddd0-43d8-85f7-8e4892071715"
+				}
+			],
+			"status": "active",
+			"type": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/claim-type", 
+						"code": "institutional",
+						"display": "Institutional"
+					}
+				]
+			},
+			"use": "claim",
+			"patient": {
+				"reference": "Patient/05c5fb73-44ec-eab9-7c32-b4b61fdbad63"
+			},
+			"billablePeriod": {
+				"start": "2018-10-08",
+				"end": "2018-10-08"
+			},
+			"created": "2021-01-14",
+			"insurer": {
+				"reference": "Organization/112864302278",
+				"display": "Glowing Health Insurance Company"
+			},
+			"provider": {
+				"reference": "Organization/953170341699",
+				"identifier": {
+					"system": "http://hl7.org/fhir/sid/us-npi",
+					"value": "953170341699"
+				},
+				"display": "Glowing Heart Medical Practice"
+			},
+			"payee": {
+				"type": {
+					"coding": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/payeetype",
+							"code": "provider",
+							"display": "Provider"
+						}
+					]
+				},
+				"party": {
+					"display": "Glowing Heart Medical Practice"
+				}
+			},
+			"outcome": "complete",
+			"supportingInfo": [
+				{
+					"sequence": 1,
+					"category": {
+						"coding": [
+							{
+								"system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType",
+								"code": "billingnetworkcontractingstatus"
+							}
+						],
+						"text": "billingnetworkcontractingstatus"
+					},
+					"code": {
+						"coding": [
+							{
+								"system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus",
+								"code": "contracted",
+								"display": "Contracted"
+							}
+						]
+					}
+				},
+				{
+					"sequence": 2,
+					"category": {
+						"coding": [
+							{
+								"system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType",
+								"code": "clmrecvddate",
+								"display" : "Claim Received Date"
+							}
+						],
+						"text": "clmrecvddate"
+					},
+					"text": "2018-10-08"							
+				},				
+				{
+					"sequence": 3,
+					"category": {
+						"coding": [
+							{
+								"system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType",
+								"code": "pointoforigin",
+								"display": "Point of Origin"
+							}
+						]
+					},
+					"code": {
+						"coding": [
+							{
+								"system": "https://www.nubc.org/CodeSystem/PointOfOrigin",
+								"code": "7",
+								"display": "7"
+							}
+						]
+					}
+				},
+				{
+					"sequence": 4,
+					"category": {
+						"coding": [
+							{
+								"system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType",
+								"code": "servicefacility",
+								"display": "Service Facility"
+							}
+						]
+					},
+					"code": {
+						"coding": [
+							{
+								"system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType",
+								"code": "npi",
+								"display": "National Provider Identifier"
+							}
+						]
+					},
+					"value": "953170341699"			
+				}
+			],
+			"diagnosis": [
+				{
+					"sequence": 1,
+					"diagnosisCodeableConcept": {
+						"coding": [
+							{
+								"system": "http://hl7.org/fhir/sid/icd-10-cm",
+								"code": "R69",
+								"display": "Illness, unspecified"
+							}
+						]
+					},
+					"type": [
+						{
+							"coding": [
+								{
+									"system": "http://terminology.hl7.org/CodeSystem/ex-diagnosistype",
+									"code": "patientreasonforvisit",
+									"display": "Patient Reason for Visit"
+								}
+							]
+						}
+					]
+				},
+				{
+					"sequence": 2,
+					"diagnosisCodeableConcept": {
+						"coding": [
+							{
+								"system": "http://hl7.org/fhir/sid/icd-10-cm",
+								"code": "K51.90",
+								"display": "Ulcerative colitis, unspecified, without complications"
+							}
+						]
+					},
+					"type": [
+						{
+							"coding": [
+								{
+									"system": "http://terminology.hl7.org/CodeSystem/ex-diagnosistype",
+									"code": "principaldiagnosis",
+									"display": "Principal Diagnosis"
+								}
+							]
+						}
+					]
+				},				
+			],
+			"procedure": [
+				{
+					"sequence": 1,
+					"type": [
+						{
+							"coding": [
+								{
+									"system": "http://terminology.hl7.org/CodeSystem/ex-procedure-type",
+									"code": "primary"
+								}
+							]
+						}
+					],
+					"date": "2018-10-08",
+					"procedureCodeableConcept": {
+						"coding": [
+							{
+								"system": "http://snomed.info/sct",
+								"code": "10383002",
+								"display": "Counseling for termination of pregnancy"
+							}
+						]
+					}
+				}
+			],
+			"insurance": [
+				{
+					"focal": false,
+					"coverage": {
+						"reference": "Coverage/1eaa9946-67de-4fd4-8404-5d8d3bfd52a2"
+					}
+				}
+			],
+			"item": [
+				{
+					"sequence": 1,
+					"revenue": {
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/v2-0456",
+								"code": "...",
+								"display": "No suggested values defined"
+							}
+						]
+					},
+					"category": {
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/ex-benefitcategory",
+								"code": "11"
+							}
+						]
+					},
+					"productOrService": {
+						"coding": [
+							{
+								"system": "http://snomed.info/sct",
+								"code": "168702005",
+								"display": "Plain X-ray abdomen"
+							}
+						]
+					},
+					"modifier": [
+						{
+							"coding": [
+								{
+									"system": "http://terminology.hl7.org/CodeSystem/modifiers"
+								}
+							]
+						}
+					],
+					"servicedDate": "2018-10-08",
+					"locationCodeableConcept": {
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/ex-serviceplace"
+							}
+						]
+					},
+					"quantity": {
+						"value": 0.0
+					},
+					"adjudication": [
+						{
+							"category": {
+								"coding": [
+									{
+										"system": "http://terminology.hl7.org/CodeSystem/adjudication",
+										"code": "submitted",
+										"display": "Submitted Amount"
+									}
+								]
+							}
+						}
+					]
+				}
+			],
+			"total": [
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/adjudication",
+								"code": "submitted"
+							}
+						]
+					},
+					"amount": {
+						"value": 8095.63,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/adjudication",
+								"code": "eligible"
+							}
+						]
+					},
+					"amount": {
+						"value": 8095.63,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/adjudication",
+								"code": "benefit"
+							}
+						]
+					},
+					"amount": {
+						"value": 0.0,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/adjudication",
+								"code": "deductible"
+							}
+						]
+					},
+					"amount": {
+						"value": 8095.63,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/adjudication",
+								"code": "copay"
+							}
+						]
+					},
+					"amount": {
+						"value": 120.0,
+						"currency": "USD"
+					}
+				}
+			],
+			"payment": {
+				"type": {
+					"coding": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/paymentstatus",
+							"code": "paid",
+							"display" : "Paid"
+						}
+					]
+				},
+				"date": "2018-10-08"
+			}
+}
