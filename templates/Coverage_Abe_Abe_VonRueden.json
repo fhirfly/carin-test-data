@@ -1,0 +1,91 @@
+{
+		"resourceType": "Coverage",
+			"id": "1eaa9946-67de-4fd4-8404-5d8d3bfd52a2",
+			"meta": {
+				"lastUpdated": "2021-01-14T05:16:55.03+00:00",
+				"profile": [
+						"http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Coverage|1.0.0"
+					]
+			},
+			"identifier": [
+				{
+					"use": "official",
+					"type": {
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/coverage-class",
+								"code": "plan",
+								"display": "Plan"
+							}
+						],
+						"text": "coverageID"
+					},
+					"value": "1eaa9946-67de-4fd4-8404-5d8d3bfd52a2"
+				}
+			],
+			"status": "cancelled",
+			"type": {
+				"text": "PPO"
+			},
+			"subscriber": {
+				"reference": "Patient/05c5fb73-44ec-eab9-7c32-b4b61fdbad63"
+			},
+			"subscriberId": "05c5fb73-44ec-eab9-7c32-b4b61fdbad63",
+			"beneficiary": {
+				"reference": "Patient/05c5fb73-44ec-eab9-7c32-b4b61fdbad63"
+			},
+			"relationship": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/subscriber-relationship",
+						"code": "self",
+						"display": "Self"
+					}
+				]
+			},
+			"period": {
+				"start": "2017-01-01",
+				"end": "2017-12-31"
+			},
+			"payor": [
+				{
+					"reference": "Organization/112864302278",
+					"identifier": {
+						"system": "http://hl7.org/fhir/sid/us-npi",
+						"value": "112864302278"
+					},
+					"display": "Glowing Health Insurance Company"
+				}
+			],
+			"class": [
+				{
+					"type": {
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/coverage-class",
+								"code": "group",
+								"display": "Group"
+							}
+						],
+						"text": "group"
+					},
+					"value": "8cceb7f4-1230-425d-8aa0-8c196590c9cf",
+					"name": "Cryocast Technologies"
+				},
+				{
+					"type": {
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/coverage-class",
+								"code": "plan",
+								"display": "Plan"
+							}
+						],
+						"text": "plan"
+					},
+					"value": "00000002",
+					"name": "Silver"
+				}
+			]
+		}
+}

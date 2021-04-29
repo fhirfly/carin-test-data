@@ -1,0 +1,66 @@
+{
+			"resourceType": "Organization",
+			"id": "953170341699",
+			"meta": {
+				"lastUpdated": "2021-01-14T05:16:55.03+00:00",
+				"profile": [
+					"http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Organization|1.0.0"
+				]
+			},
+			"identifier": [
+				{
+					"type": {
+						"coding": [
+							{
+								"system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType",
+								"code": "npi",
+								"display": "National Provider Identifier"
+							}
+						]
+					},
+					"value": "953170341699"
+				}
+			],
+			"active": true,
+			"type": [
+				{
+					"coding": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/organization-type",
+							"code": "prov"
+						}
+					]
+				}
+			],
+			"name": "Glowing Heart Medical Practice",
+			"telecom": [
+				{
+					"system": "phone"
+				}
+			],
+			"address": [
+				{
+					"use": "work",
+					"type": "both",
+					"text": "21500 QUICK FOX LN, LAYTONSVILLE, MD 20882-1340",
+					"line": [
+						"21500 QUICK FOX LN"
+					],
+					"city": "LAYTONSVILLE",
+					"state": "MD",
+					"postalCode": "20882-1340"
+				}
+			],
+			"contact": [
+				{
+					"name": {
+						"text": "PCP105878"
+					},
+					"telecom": [
+						{
+							"system": "phone"
+						}
+					]
+				}
+			]
+		}

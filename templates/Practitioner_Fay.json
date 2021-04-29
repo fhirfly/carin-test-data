@@ -1,0 +1,34 @@
+{
+			"resourceType": "Practitioner",
+			"id": "457183978250",
+			"meta": {
+				"lastUpdated": "2021-01-14T05:16:55.03+00:00",
+				"profile": [
+					"http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Practitioner|1.0.0"
+				]
+			},
+			"identifier": [
+				{
+					"use": "official",
+					"type": {
+						"coding": [
+							{
+								"system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType",
+								"code": "npi"
+							}
+						]
+					},
+					"value": "457183978250"
+				}
+			],
+			"active": true,
+			"name": [
+				{
+					"text": "Dr. Glenn Fay",
+					"family": "Fay",
+					"given": [
+						"Glenn"
+					]
+				}
+			]
+		}
