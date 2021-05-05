@@ -133,7 +133,9 @@
 						],
 						"text": "refillnum"
 					},
-					"valueString": "false"
+					  "valueQuantity" : {
+                         "value" : 5
+                    }
 				}
 			],
 			"diagnosis": [
