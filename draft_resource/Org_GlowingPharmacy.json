@@ -2,14 +2,25 @@
 			"resourceType": "Organization",
 			"id": "9531703417",
 			"meta": {
+				"lastUpdated": "2021-01-14T05:16:55.03+00:00",
 				"profile": [
 					"http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Organization|1.0.0"
 				]
 			},
 			"identifier": [
 				{
+					"type" : {
+						"coding" : [
+							{
+								"system" : "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType",
+								"code" : "npi",
+								"display" : "National Provider Identifier"
+						  }
+						],
+						"text" : "National Provider Identifier"
+					},
 					"use": "official",
-					"system": "https://npiregistry.cms.hhs.gov/",
+					"system": "http://hl7.org/fhir/sid/us-npi",
 					"value": "9531703417"
 				}
 			],
