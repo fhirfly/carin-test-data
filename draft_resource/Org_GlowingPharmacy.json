@@ -9,6 +9,16 @@
 			},
 			"identifier": [
 				{
+					"type" : {
+						"coding" : [
+							{
+								"system" : "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType",
+								"code" : "npi",
+								"display" : "National Provider Identifier"
+						  }
+						],
+						"text" : "National Provider Identifier"
+					},
 					"use": "official",
 					"system": "http://hl7.org/fhir/sid/us-npi",
 					"value": "9531703417"
