@@ -126,8 +126,7 @@
 						"coding": [
 							{
 								"system": "https://www.nubc.org/CodeSystem/PointOfOrigin",
-								"code": "7",
-								"display": "7"
+								"code": "1"
 							}
 						]
 					}

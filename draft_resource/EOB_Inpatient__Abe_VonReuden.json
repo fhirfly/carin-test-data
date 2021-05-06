@@ -180,7 +180,7 @@
 						"coding": [
 							{
 								"system": "https://www.nubc.org/CodeSystem/PatDischargeStatus",
-								"code": "home"
+								"code": "01"
 							}
 						]
 					}
