@@ -37,38 +37,18 @@
 					"valueCoding": {
 						"system": "urn:oid:2.16.840.1.113883.6.238",
 						"code": "2186-5",
-						"display": "Non Hispanic or Latino"
+						"display": "Not Hispanic or Latino"
 					}
 				},
 				{
 					"url": "text",
-					"valueString": "Non Hispanic or Latino"
+					"valueString": "Not Hispanic or Latino"
 				}
 			]
 		},
 		{
-			"url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
-			"valueString": "Paz9 Green467"
-		},
-		{
 			"url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
 			"valueCode": "M"
-		},
-		{
-			"url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
-			"valueAddress": {
-				"city": "Tewksbury",
-				"state": "Massachusetts",
-				"country": "US"
-			}
-		},
-		{
-			"url": "http://synthetichealth.github.io/synthea/disability-adjusted-life-years",
-			"valueDecimal": 0.0
-		},
-		{
-			"url": "http://synthetichealth.github.io/synthea/quality-adjusted-life-years",
-			"valueDecimal": 11.0
 		}
 	],
 	"identifier": [
@@ -177,7 +157,7 @@
 					{
 						"system": "urn:ietf:bcp:47",
 						"code": "en-US",
-						"display": "English"
+						"display": "English (Region=United States)"
 					}
 				],
 				"text": "English"
