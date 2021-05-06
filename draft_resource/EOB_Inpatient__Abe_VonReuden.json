@@ -304,17 +304,17 @@
 			"adjudication" : [
 			  {
 				"category" : {
-				  "coding" : [
-					{
-					  "system" : "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication",
-					  "code" : "paidtoprovider",
-					  "display" : "Paid to Provider"
-					}
-				  ]
+					"coding" : [
+						{
+							"system" : "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication",
+							"code" : "paidtoprovider",
+							"display" : "Paid to Provider"
+						}
+				  	]
 				},
 				"amount" : {
-				  "value" : 642.59,
-				  "currency" : "USD"
+					"value" : 642.59,
+					"currency" : "USD"
 				}
 			  }
 			],
